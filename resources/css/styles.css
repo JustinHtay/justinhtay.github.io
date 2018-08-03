@@ -1,0 +1,18 @@
+body {
+    color: white;
+    background-color: #003153; /*Prussian Blue*/
+}
+p {
+    font-size: 18px;
+}
+
+
+.navbar-inverse {
+    margin-bottom: 100px;
+}
+.footer {
+   margin:50px;
+}
+.header {
+   margin:50px;
+}

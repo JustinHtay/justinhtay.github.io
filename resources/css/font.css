@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Latin Modern";
+    src: url(fonts/lmroman10-italic.otf);
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Latin Modern";
+    src: url(fonts/lmroman10-bolditalic.otf);
+    font-weight: bold;
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "Latin Modern";
+    src: url(fonts/lmroman10-regular.otf);
+    font-style: normal;
+}
+@font-face {
+    font-family: "Latin Modern";
+    src: url(fonts/lmroman10-bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    font-family: "Latin Modern";
+    font-style: normal;
+}
