@@ -9,13 +9,31 @@ b {
     color: #B3A369; /*Tech Gold*/
 }
 
-
+.nav.navbar-nav.navbar-left li a {
+    color: #B3A369; /*Tech Gold*/
+}
 .navbar-inverse {
     margin-bottom: 100px;
+}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
 }
 .footer {
    margin:50px;
 }
 .header {
    margin:50px;
+}
+.resume-section {
+    margin-bottom:100px;
+}
+.color-1 {
+    background-color:#003153;
+}
+.color-2 {
+    background-color:#6a4899;
 }
