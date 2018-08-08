@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 body {
     color: white;
     background-color: #003153; /*Prussian Blue*/
@@ -12,6 +16,9 @@ b {
 .nav.navbar-nav.navbar-left li a {
     color: #B3A369; /*Tech Gold*/
 }
+.navbar-inverse .navbar-brand {
+    color: #B3A369; /*Tech Gold*/
+}
 .navbar-inverse {
     margin-bottom: 100px;
 }
@@ -21,6 +28,17 @@ b {
     left: 0;
     text-align: center;
     margin: 0 auto;
+}
+.menu-text,
+.menu-text > span,
+.menu-text > li > a {
+    color: #B3A369; /*Tech Gold*/
+    background-color: #222;
+}
+.menu-text > li > a:hover {
+    color: #B3A369; /*Tech Gold*/
+    background-color: #222;
+    text-shadow:2px 2px 20px white;
 }
 .footer {
    margin:50px;

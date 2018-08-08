@@ -20,6 +20,10 @@
 
     <!-- CSS stylings -->
     <link rel="stylesheet" type="text/css" href="./resources/css/styles.css">
+    
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
 
 </head>
 
@@ -27,11 +31,30 @@
     <!-- Navbar -->
     <nav class="navbar navbar-inverse">
         <div class="container-fluid-nav">
-            <a class="navbar-brand" href="index.html">Justin Htay</a>
-            <ul class="nav navbar-nav navbar-left list-inline">
-                <li><a class="navtext" href="./resources/files/Justin_Htay_Resume.pdf">Resume</a></li>
-                <li><a class="navtext" href="./resources/files/Justin_Htay_CV.pdf">Curriculum Vitae</a></li>
+            <div class="navbar-header">
+                <a target="_blank" class="navbar-brand">Justin Htay</a>
+                <ul class="nav navbar-nav navbar-left list-inline">
+                    <li><a target="_blank" class="navtext" href="./resources/files/Justin_Htay_Resume.pdf">Resume</a></li>
+                    <li><a target="_blank" class="navtext" href="./resources/files/Justin_Htay_CV.pdf">Curriculum Vitae</a></li>
+                    <li><a target="_blank" class="navtext" href="mailto:justinhtay@gmail.com">Contact</a></li>
+                </ul> 
+            </div>
+            <!--
+            <ul class="nav navbar-nav navbar-right list-inline">
+                <li><a target="_blank" class="navtext" href="https://linkedin.com/in/justinhtay"><i class="fab fa-linkedin fa-lg" style="color: #0077B5"></i></a></li>
+                <li><a target="_blank" class="navtext" href="https://github.com/justinhtay"><i class="fab fa-github-square fa-lg"></i></a></li>
             </ul> 
+            -->
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a style="color:#B3A369; background-color: #222;" class="dropdown-toggle menu-text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contents<span class="caret"></span></a>
+                        <ul class="dropdown-menu menu-text" id="menu">
+                            <li><a ref="#intro" data-toggle="collapse" data-target="menu">About Me</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -71,7 +94,7 @@
     <!-- Footer -->
     <div class="container-fluid footer">
        <footer class="container-fluid content text-center small">
-           Made by Justin Htay, with assistance from Bootstrap and LaTeX.
+           Made by Justin Htay, with assistance from Bootstrap, Font Awesome, and LaTeX.
        </footer>
     </div>
 
