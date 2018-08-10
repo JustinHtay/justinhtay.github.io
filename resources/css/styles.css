@@ -40,7 +40,8 @@ b {
    padding: 100px 100px 100px 100px;
 }
 .resume-section {
-    padding-bottom:100px;
+    padding-bottom:50px;
+    padding-top:50px;
 }
 .color-1 {
     /*background-color:#2E1760;*/
@@ -52,4 +53,7 @@ b {
 /*	background: linear-gradient(#17245A,#003153,#17245A);*/
 	background: linear-gradient(#003153,#2E1761,#003153);
 
+}
+.img-responsive {
+    display: inline;
 }
