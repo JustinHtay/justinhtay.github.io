@@ -35,19 +35,11 @@
         <div class="container-fluid-nav">
             <div class="navbar-header">
                 <a target="_blank" class="navbar-brand">Justin Htay</a>
-                <ul class="nav navbar-nav navbar-left list-inline" style="margin-left:20px;">
-                    <li><a target="_blank" class="navtext" href="./resources/files/Justin_Htay_Resume.pdf">Resume</a></li>
-                    <li><a target="_blank" class="navtext" href="./resources/files/Justin_Htay_CV.pdf">Curriculum Vitae</a></li>
-                    <li><a target="_blank" class="navtext" href="mailto:justinhtay@gmail.com">Contact</a></li>
+                <ul class="nav navbar-nav navbar-left list-inline" style="margin-left:40px;">
+                    <li><a class="navtext" href="#contact">Contact</a></li>
                 </ul> 
             </div>
-            <!--
-            <ul class="nav navbar-nav navbar-right list-inline">
-                <li><a target="_blank" class="navtext" href="https://linkedin.com/in/justinhtay"><i class="fab fa-linkedin fa-lg" style="color: #0077B5"></i></a></li>
-                <li><a target="_blank" class="navtext" href="https://github.com/justinhtay"><i class="fab fa-github-square fa-lg"></i></a></li>
-            </ul> 
-            -->
-            <div class="collapse navbar-collapse navbar-right" style="margin-right:20px;">
+            <div class="collapse navbar-collapse navbar-right" style="margin-right:40px;">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a style="color:#B3A369; background-color: #222;" class="dropdown-toggle menu-text" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contents<span class="caret"></span></a>
@@ -56,6 +48,8 @@
                             <li><a href="#jobs" data-toggle="collapse" data-target="menu">Work Experience</a></li>
                             <li><a href="#projects" data-toggle="collapse" data-target="menu">Projects</a></li>
                             <li><a href="#ec" data-toggle="collapse" data-target="menu">Activities</a></li>
+                            <li><a href="#contact" data-toggle="collapse" data-target="menu">Contact</a></li>
+                            <li><a target="_blank" class="navtext" href="./resources/files/Justin_Htay_Resume.pdf">Resume</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -89,10 +83,8 @@
         <hr/>
         <div class="row">
             <div class="col-md-4">
-                <a href="#TA" data-toggle="collapse">
-                    <img class="img-circle img-responsive" src="./resources/images/GT.png" alt="GTpic" />
-                </a>
-                <div id="TA" class="in collapse">
+                <img class="img-circle img-responsive" src="./resources/images/GT.png" alt="GTpic" />
+                <div id="TA" >
                     <p> 
                     I currently work as an Undergraduate Teaching Assistant (<b>UTA</b>) for the College of Computing at Georgia Tech, teaching <b>CS 1371</b>, which is the introductory programming class for most engineering students at Georgia Tech. We have over 1000 students enrolled in the class in the larger semesters. As a TA, I have:
                         <ul>
@@ -105,10 +97,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <a href="#GTRI" data-toggle="collapse">
-                    <img src="./resources/images/GTRI-1.png" class="img-responsive" alt="GTRIpic" />
-                </a>
-                <div id="GTRI" class="in collapse">
+                <img src="./resources/images/GTRI-1.png" class="img-responsive" alt="GTRIpic" />
+                <div id="GTRI" >
                     <p>
                     I worked as a High-Performance Computing (<b>HPC</b>) co-op in the Advanced Concepts Laboratory (<b>ACL</b>) of the Georgia Tech Research Institute (<b>GTRI</b>). I was responsible for maintaining and upgrading 10+ HPC resources and performed numerous electromagnetic modeling tasks. Highlights of my time at GTRI include:
                         <ul>
@@ -123,10 +113,8 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <a href="#NHBB" data-toggle="collapse">
-                    <img class="img-rounded img-responsive" src="./resources/images/NHBB-1.png" alt="NHBBpic" />
-                </a>
-                <div id="NHBB" class="in collapse">
+                <img class="img-rounded img-responsive" src="./resources/images/NHBB-1.png" alt="NHBBpic" />
+                <div id="NHBB" >
                     <p>
                     I am a writer for the National History Bee and Bowl (<b>NHBB</b>). NHBB organizes quiz competitions for middle and high school students around the globe on primarily historical content. Thanks to my experience in <a href="#">Academic Bowl</a> and love of history, I am a seasoned writer of questions. At NHBB, I:
                         <ul>
@@ -145,21 +133,20 @@
         <h2> What have I worked on?</h2>
         <hr/>
         <div class="row">
-            <div class="col-md-6">
-                <a href="#ziggurat" data-toggle="collapse">
-                    <img class="img-responsive" src="./resources/images/ziggurat.png" alt="zigguratpic" />
-                </a>
-                <div id="ziggurat" class="in collapse">
+            <!-- ziggurat -->
+            <div class="col-md-4">
+                <img class="img-responsive" src="./resources/images/ziggurat.png" alt="zigguratpic" />
+                <div id="ziggurat" >
                     <p>
                     In collarboration with Nathan Parrish and Dr. David V. Anderson, I worked on a project to generate normally-distributed random numbers. I implemented Nathan's modification of the ziggurat algorithm (originally proposed by Marsaglia and Tsang <a href="https://core.ac.uk/download/pdf/6287927.pdf">here</a>) in both C and MATLAB, achieving results consistent with the predictions in his paper.
                     </p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <a href="#3DFrag" data-toggle="collapse">
-                    <img class="img-responsive" src="./resources/images/apertureantenna.png" alt="3DFragpic" />
-                </a>
-                <div id="3DFrag" class="in collapse">
+           
+            <!-- 3DFrag -->
+            <div class="col-md-4">
+                <img class="img-responsive" src="./resources/images/apertureantenna.png" alt="3DFragpic" />
+                <div id="3DFrag" >
                     <p>
                     While at GTRI, I worked on a research project to extend GTRI's fragmented aperture antenna technology (detailed in <a href="https://ieeexplore.ieee.org/document/6715421/">this</a> paper) from the traditional 2D space to the 3D space. The effort was extremely sucessful, and was recognized by the Chief Technical Officer (now Interim Director) of GTRI at a June 2017 presentation of internal research projects. While working on this project, I:
                         <ul>
@@ -171,37 +158,58 @@
                     </p>
                 </div>
             </div>
+            
+            <!-- coursegraph -->
+            <div class="col-md-4">
+                <a href="https://justinhtay.github.io/coursegraph" target="_blank">
+                    <img class="img-responsive img-circle" src="./resources/images/coursegraph.png" alt="cgpic" />
+                </a>
+                <div id="coursegraph" >
+                    <p>
+                    During the break between summer and fall of 2017, I built a website to display the prerequisite relationships between all of Georgia Tech's classes. I found it intuitive to display the classes as nodes in a graph. I was able to learn some Javascript, HTML, and CSS while designing that website and the one you're on now! Click on the circle above to go to the website and look around the graph! I like looking at some of the foundational courses (like the 1XXX/2XXX math classes) and seeing just how many different things are connected to them.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </div> 
     
     <!-- Activities -->
     <div class="container-fluid text-center resume-section" id="ec">
-        <h2>What do I do in my free time?</h2>
+        <h2>Where do I lead?</h2>
         <hr/>
         <div class="row">
             <div class="col-md-12">
-                <a href="#qb" data-toggle="collapse">
-                    <img class="img-responsive" src="./resources/images/quiz-bowl.jpg" alt="qbpic" />
-                </a>
-                <div id="qb" class="in collapse">
+                <img class="img-responsive" src="./resources/images/quiz-bowl.jpg" alt="qbpic" />
+                <div id="qb" >
                     <p>
-                    I am a member of the Academic Quizbowl Team at Georgia Tech.
+                    I am the current president of the Academic Quizbowl Team at Georgia Tech. Quizbowl is a buzzer-based team competition similar to Jeopardy, where players try to answer questions on a wide range of academic subjects. After playing in high school, I was elected treasurer upon joining the Georgia Tech team freshman year, then was elected president for my junior year. While leading the academic bowl team, I directed several tournaments attended by colleges from around the Southeast, earning $3000 a year for the club. I also volunteered in the local high school circuit and increased club attendance.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <a href="#3DFrag" data-toggle="collapse">
-                    <img class="img-responsive" src="./resources/images/apertureantenna.png" alt="3DFragpic" />
-                </a>
-                <div id="3DFrag" class="in collapse">
-
-                </div>
-            </div>
-
-        </div>
     </div> 
+    
+    <!-- Contact -->
+    <div class="container-fluid text-center resume-section" id="contact">
+        <h2>How can you get in touch?</h2>
+        <hr/>
+        <p>
+            You can email me <a target="_blank" class="navtext" href="mailto:justinhtay@gmail.com">here!</a>
+        </p>
+        <p>
+        If you'd like this website in PDF form, here are links to my
+            <li><a target="_blank" class="navtext" href="./resources/files/Justin_Htay_Resume.pdf">Resume</a></li>
+            <li><a target="_blank" class="navtext" href="./resources/files/Justin_Htay_CV.pdf">Curriculum Vitae</a></li>
+        </p>
+        <p>
+            Find me on Linkedin and Github here:
+            <ul class="text-center list-inline">
+                <li><a target="_blank" href="https://linkedin.com/in/justinhtay"><i class="fab fa-linkedin fa-3x" style="color: #0077B5"></i></a></li>
+                <li><a target="_blank" href="https://github.com/justinhtay"><i class="fab fa-github-square fa-3x" style="color: #211F1F"></i></a></li>
+            </ul> 
+        </p>
+    </div>
     
     <!-- Footer -->
     <div class="container-fluid footer">
