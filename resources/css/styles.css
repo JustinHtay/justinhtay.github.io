@@ -42,17 +42,7 @@ b {
 .resume-section {
     padding-bottom:50px;
     padding-top:50px;
-}
-.color-1 {
-    /*background-color:#2E1760;*/
-/*	background: linear-gradient(#17245A,#2E1761,#17245A);*/
-	background: linear-gradient(#003153,#2E1761,#003153);
-}
-.color-2 {
-    /*background-color:#003153;*/
-/*	background: linear-gradient(#17245A,#003153,#17245A);*/
-	background: linear-gradient(#003153,#2E1761,#003153);
-
+    background: linear-gradient(#003153,#2E1761,#003153);
 }
 .img-responsive {
     display: inline;

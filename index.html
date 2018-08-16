@@ -54,6 +54,8 @@
                         <ul class="dropdown-menu-left dropdown-menu menu-text" id="menu">
                             <li><a href="#intro" data-toggle="collapse" data-target="menu">About Me</a></li>
                             <li><a href="#jobs" data-toggle="collapse" data-target="menu">Work Experience</a></li>
+                            <li><a href="#projects" data-toggle="collapse" data-target="menu">Projects</a></li>
+                            <li><a href="#ec" data-toggle="collapse" data-target="menu">Activities</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -70,7 +72,7 @@
 
 	<!-- About Me -->
 	
-    <div class="container-fluid intro text-center resume-section color-1" id="intro">
+    <div class="container-fluid intro text-center resume-section " id="intro">
         <h2>Who am I?</h2>
         <hr/>
         <p>
@@ -82,12 +84,9 @@
     </div>
 
     <!-- Work Experience -->
-    
-    <div class="container-fluid text-center resume-section color-2" id="jobs">
+    <div class="container-fluid text-center resume-section " id="jobs">
         <h2> Where have I worked? </h2>
         <hr/>
-        
-        <!-- Images -->
         <div class="row">
             <div class="col-md-4">
                 <a href="#TA" data-toggle="collapse">
@@ -139,54 +138,71 @@
                 </div>
             </div>
         </div>
-
-        <!--
+    </div>
+    
+    <!-- Projects/Publications -->
+    <div class="container-fluid text-center resume-section" id="projects">
+        <h2> What have I worked on?</h2>
+        <hr/>
         <div class="row">
-            <div class="col-md-4">
-                <div id="TA" class="in collapse">
-                    <p> 
-                    I currently work as an Undergraduate Teaching Assistant (<b>UTA</b>) for the College of Computing at Georgia Tech, teaching <b>CS 1371</b>, which is the introductory programming class for most engineering students at Georgia Tech. We have over 1000 students enrolled in the class in the larger semesters. As a TA, I have:
-                        <ul>
-                            <li>Served as <b>Course Manager and Homework Lead</b> concurrently for two summer semesters. As Course Manager, I was responsible for smooth operation of the class, managing the TA team, and communicating with the professor who taught the class. As Homework Lead, I published weekly homeworks for the class.</li>
-                            <li>Wrote 20+ homework problems that were both creative and instructive for students.</li>
-                            <li>Taught 1.5-2 hour recitations and held 3 hours of office hours weekly for a section of approximately 50 students.</li>
-                        </ul>
-                    I have worked as a TA from January 2017 until the present.
+            <div class="col-md-6">
+                <a href="#ziggurat" data-toggle="collapse">
+                    <img class="img-responsive" src="./resources/images/ziggurat.png" alt="zigguratpic" />
+                </a>
+                <div id="ziggurat" class="in collapse">
+                    <p>
+                    In collarboration with Nathan Parrish and Dr. David V. Anderson, I worked on a project to generate normally-distributed random numbers. I implemented Nathan's modification of the ziggurat algorithm (originally proposed by Marsaglia and Tsang <a href="https://core.ac.uk/download/pdf/6287927.pdf">here</a>) in both C and MATLAB, achieving results consistent with the predictions in his paper.
                     </p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div id="GTRI" class="in collapse">
+            <div class="col-md-6">
+                <a href="#3DFrag" data-toggle="collapse">
+                    <img class="img-responsive" src="./resources/images/apertureantenna.png" alt="3DFragpic" />
+                </a>
+                <div id="3DFrag" class="in collapse">
                     <p>
-                    I worked as a High-Performance Computing (<b>HPC</b>) co-op in the Advanced Concepts Laboratory (<b>ACL</b>) of the Georgia Tech Research Institute (<b>GTRI</b>). I was responsible for maintaining and upgrading 10+ HPC resources and performed numerous electromagnetic modeling tasks. Highlights of my time at GTRI include:
+                    While at GTRI, I worked on a research project to extend GTRI's fragmented aperture antenna technology (detailed in <a href="https://ieeexplore.ieee.org/document/6715421/">this</a> paper) from the traditional 2D space to the 3D space. The effort was extremely sucessful, and was recognized by the Chief Technical Officer (now Interim Director) of GTRI at a June 2017 presentation of internal research projects. While working on this project, I:
                         <ul>
-                            <li>Applying <b>numerical optimization</b> techniques (e.g <b>genetic algorithms</b>) to design electromagnetic structures using the <b>FDTD</b> method</li>
-                            <li>Designing a fragmented aperture antenna that was produced using a novel 3D-printed approach that resulted in a paper.</li>
-                            <li>Designing a Frequency Selective Surface (<b>FSS</b>) for use in a novel periodic structure. My designs were important in getting the project extended a year with additional funding.</li>
-                            <li>Installing 5 major ACL computing resources on <b>Linux</b> operating systems (both <b>RHEL</b> and <b>Ubuntu</b>) and managing 5+ other resources, extensively utilizing my knowledge of Linux, <b>bash</b>, and problem-solving techniques.</li>
-                            <li>Creating a dashboard using <a href="https://grafana.com">Grafana</a> to display ACL achievements and user statistics on the clustering resources to prospective customers.</li>
+                            <li>Used GTRI's in-house Finite Difference Time Domain (<b>FDTD</b>) codes to design and simulate the excitement of a 3D fragmented aperture antenna.</li>
+                            <li>Used a genetic algorithm to optimize the antenna design over hundreds of thousands of iterations.</li>
+                            <li>Wrote an algorithm to ensure connectivity of all the pieces of the antenna so that it could be manufactured. The algorithm, written in Python, used the properties of an adjacency matrix from graph theory to run in feasible time, whereas the previous DFS algorithm I implemented was infeasible.</li>
                         </ul>
-                    I worked at GTRI from January 2017 to August 2018.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div id="NHBB" class="in collapse">
-                    <p>
-                    I am a writer for the National History Bee and Bowl (<b>NHBB</b>). NHBB organizes quiz competitions for middle and high school students around the globe on primarily historical content. Thanks to my experience in <a href="#">Academic Bowl</a> and love of history, I am a seasoned writer of questions. At NHBB, I:
-                        <ul>
-                            <li>Wrote 800+ questions with a 99% acceptance rate. These questions were used in all levels of competition, from local tournaments to the International History Olympiad.</li>
-                            <li>Wrote 40%+ of a set on short notice, which is a very high proportion for a single writer. For my efforts, I was recognized by the Director for Question Production for outstanding contributions.</li>
-                        </ul>
-                    I have worked at NHBB from May 2015 to the present.
+                        My final designs were successfully printed and measured. They had good measure-to-model accuracy, and achieved the desired gain over a wide band (6-18 GHz). These findings were ultimately written up into a report and then a paper that is currently being prepared for publication.
                     </p>
                 </div>
             </div>
         </div>
-        -->
-    </div>
+    </div> 
     
-	
+    <!-- Activities -->
+    <div class="container-fluid text-center resume-section" id="ec">
+        <h2>What do I do in my free time?</h2>
+        <hr/>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#qb" data-toggle="collapse">
+                    <img class="img-responsive" src="./resources/images/quiz-bowl.jpg" alt="qbpic" />
+                </a>
+                <div id="qb" class="in collapse">
+                    <p>
+                    I am a member of the Academic Quizbowl Team at Georgia Tech.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#3DFrag" data-toggle="collapse">
+                    <img class="img-responsive" src="./resources/images/apertureantenna.png" alt="3DFragpic" />
+                </a>
+                <div id="3DFrag" class="in collapse">
+
+                </div>
+            </div>
+
+        </div>
+    </div> 
+    
     <!-- Footer -->
     <div class="container-fluid footer">
        <footer class="container-fluid content text-center small">
